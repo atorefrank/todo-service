@@ -97,4 +97,29 @@ part 3
 Implement eventing
 
 Part 4
+
 Move to separate db's. Show data migration# todo-service
+
+
+docker 5
+
+detail how to setup harness, terraform and github actions
+
+Auto provisioning with harness and terraform
+
+Deployment with kubernetes and harness
+
+Integration with github actions and acr
+
+docker build -t todo:0.1 .
+docker run -p 8001:80 todo:0.1 .
+
+curl https://localhost:8001/todo
+
+docker tag todo:0.1 todoservice.azurecr.io/todo:0.1
+
+az acr login --name todoservice
+<!-- docker run -p 7184:80 todo:0.1 . -->
+
+
+<!-- https://localhost:7184/todo -->
